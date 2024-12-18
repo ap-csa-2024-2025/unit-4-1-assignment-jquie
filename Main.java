@@ -6,7 +6,7 @@ public class Main
   {
     // Problem 1
     Scanner sc = new Scanner(System.in);
-    /*
+    
     System.out.println("Enter any numbers (Enter -1 to stop)");
     int num = 0;
     int sum = 0;
@@ -34,12 +34,23 @@ public class Main
       i++;
     }
     System.out.println("The largest score is " + max);
-    */
 
    // Problem 3
    System.out.println("Input a word");
    String word = sc.nextLine();
    int count = word.length();
    int i = 0;
+   while ( i < count)
+   {
+    if (i < count-1)
+    {
+      System.out.print(word.substring (i, i+2));
+    }
+    if (i == count-1)
+    {
+      System.out.print(word.substring(i));
+    }
+    i += 3;
+   }
   }
 }
